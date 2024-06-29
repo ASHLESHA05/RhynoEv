@@ -1,0 +1,55 @@
+header{
+    margin-top: 2px;
+}
+/* Custom CSS to position the collapsed navbar on the left side */
+@media (max-width: 576px) {
+    .navbar-collapse {
+      position: absolute;
+      top: 56px; /* Adjust based on your navbar height */
+      left: 0;
+      width: 100%;
+      background-color: #343a40; /* Same color as navbar-dark bg-dark */
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-toggler {
+      margin-left: auto;
+    }
+  }
+/* header.css */
+.nav-link i {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .nav-link #insta:hover {
+    color: #e1306c; /* Instagram brand color */
+  }
+.nav-link #linkedin:hover{
+    color: #0e76a8
+} 
+
+.signUp-button{
+    background-color: black;
+    border-color: aliceblue;
+    color:bisque;
+    margin-left: 20px;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow  :0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.signUp-button:hover{
+    color:greenyellow
+}
+li a:hover {
+    color: #ffdd40;
+  }
+
+
+  
+  

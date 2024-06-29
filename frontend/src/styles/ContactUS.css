@@ -1,0 +1,89 @@
+
+.App {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+  .container-contact {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #080000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(220, 7, 7, 0.1);
+    color: white; /* Ensure text is readable on dark background */
+   
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+    font-size: 0.9em;
+  }
+  
+  .contact-info a {
+    color: #FFF225;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-form {
+    margin-top: 20px;
+    align-items: center;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+  }
+  
+  .form-group label {
+    display: ruby-base;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 90px;
+   
+
+  }
+  .form-group textarea{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 90px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #FFF225;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #595408;
+  }
+  
+  .Appi{
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,145 @@
+body {
+  
+  background-color:  #2C2A2A; /* Set to the dark background color */
+}
+.App {
+  width: 100%;
+  height: auto;
+  justify-content: left;
+  align-items: left;
+  top: 60%;
+  margin-top: 5%;
+  /* Ensure background color is applied */
+}
+.product-container {
+  background-color: #23272a; /* Set the background color of the central content */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 40%;
+  overflow-y: visible;
+  min-height: 100%;
+}
+.color-buttons-container {
+  position: absolute;
+  bottom: 10px; /* Adjust as per your design */
+  left: 16%; /* Center horizontally */
+  top: 85%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.color-button {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px; /* Adjust spacing between buttons */
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.buy-buttons-container #testDrive {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  color:  #F9ED32;
+}
+
+.buy-buttons-container #prebook {
+  cursor: pointer;
+  position: absolute;
+  left: 38%;
+  border-radius: 10px;
+  background-color:  #F9ED32;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.buy-buttons-container #prebook:hover {
+  box-shadow: 0 12px 24px rgba(200, 255, 0, 0.986); /* Blue shadow on hover */
+  transform: scale(0.9) translateY(-5px); /* Zoom in and move up */
+  z-index: 0.5; 
+}
+.buy-buttons-container #compare{
+  cursor: pointer;
+  position: absolute;
+  left: 70%;
+  border-radius: 10px;
+  background-color:  #f6f5ee;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+}
+.buy-buttons-container #compare:hover {
+  box-shadow: 0 12px 24px rgba(200, 255, 0, 0.386); /* Blue shadow on hover */
+  transform: scale(0.9) translateY(-5px); /* Zoom in and move up */
+  z-index: 0.5; 
+}
+
+.buy-buttons-container #testDrive:hover {
+  transform: scale(0.9) translateY(-5px); /* Zoom in and move up */
+  z-index: 0.5; 
+}
+
+.swiper-pagination {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  overflow: visible; /* Allows the enlarged image to overflow */
+}
+
+.react-image-magnify {
+  position: relative;
+  overflow: visible; /* Allows the enlarged image to overflow */
+}
+
+.enlarged-image-container {
+  z-index: 10 !important; /* Ensure the zoomed image appears above other elements */
+}
+.click-here{
+  color: #FFF225;
+  cursor: pointer;
+}
+.click-here:hover{
+  box-shadow: 0 12px 24px rgba(200, 255, 0, 0.986); /* Blue shadow on hover */
+  transform: scale(0.9) translateY(-5px); /* Zoom in and move up */
+  z-index: 2.5; 
+  cursor:pointer;
+
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  overflow-y: auto;
+  max-height: 90vh;
+  position: relative;
+}
+
+.close-button {
+  background-color: #FFF225;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

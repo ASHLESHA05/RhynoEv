@@ -1,0 +1,29 @@
+/* Register.css */
+
+.containerreg {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(164, 169, 164, 0.1);
+  }
+  
+  .register {
+    background-color: #d6ddec;
+    padding: 80px;
+    border-radius:  25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: rgb(179, 128, 0);
+  }
+  
