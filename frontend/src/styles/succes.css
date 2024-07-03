@@ -1,0 +1,35 @@
+.success-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 999; /* Ensure it appears above other content */
+  }
+  
+  .success-message {
+    text-align: center;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%; /* Limit width of the popup */
+  }
+  
+  .checkmark {
+    margin-bottom: 20px;
+  }
+  
+  .success-message h1 {
+    font-size: 2em;
+    color: #fff225;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Black colored shadow */
+  }
+  

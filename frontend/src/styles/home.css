@@ -1,0 +1,453 @@
+/* Ensure fixed text container takes full width and has fixed height */
+.fixed-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 60px; /* Adjust height as needed */
+  margin-bottom: 20px;
+}
+
+/* Prevent text from wrapping */
+.static-text,
+.dynamic-text {
+  white-space: nowrap;
+}
+
+/* Center text */
+.fixed-text-container .static-text {
+  margin-bottom: 10px;
+}
+
+/* Ensure no layout shifts due to dynamic text */
+.dynamic-text {
+  width: 100%;
+  position: relative;
+}
+
+/* Invisible placeholder to prevent shifting */
+.dynamic-text::after {
+  content: 'Comfort'; /* Longest phrase to maintain width */
+  visibility: hidden;
+  position: absolute;
+}
+
+.home-page {
+  margin-top: 100px; /* Adjust based on your header height */
+}
+
+.swiper-container {
+  max-width: 100%;
+  height: auto;
+}
+
+.slide-controller {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.slider-arrow {
+  cursor: pointer;
+  font-size: 24px;
+  color: rgb(62, 20, 199);
+  margin: 0 10px;
+  opacity: 0.5;
+}
+
+.swiper-pagination {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Blinking cursor animation */
+.blinking-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  width: 10px;
+  height: 24px;
+  /* background-color: rgb(14, 13, 13); */
+  animation: typing 1s steps(40, end) forwards ,blink , blink2 0.7s step-end infinite;
+}
+
+@keyframes blink2 {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+
+  
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(238, 164, 25);
+  }
+  
+}
+.bikeHeading{
+  position: relative;
+  margin-top: 50px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the container takes up the full viewport height */
+}
+
+.showupimg {
+  position: relative;
+  text-align: center; /* Center text horizontally */
+}
+
+.bikeheading {
+  position: absolute;
+  top: 50%; /* Position 50% from the top of the parent (.showupimg) */
+  left: 50%; /* Position 50% from the left of the parent (.showupimg) */
+  transform: translate(-50%, -50%); /* Center the text vertically and horizontally */
+  color: white; /* Adjust text color */
+  z-index: 1; /* Ensure the text is above the image */
+}
+
+.showupimg img {
+  max-width: 70%; /* Adjust the max-width of the image */
+  display: block; /* Ensure the image behaves like a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+
+.product-container {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(213, 171, 171, 0.1);
+  background-color: #2c2a2a;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-container:hover {
+  box-shadow: 0 12px 24px rgba(#FFF225, 0.4); /* Blue shadow on hover */
+  transform: scale(1.05) translateY(-5px); /* Zoom in and move up */
+  z-index: 1; /* Ensure hover item is above others */
+}
+
+
+.glow {
+  box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.5); /* Yellow glow effect */
+}
+.App {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#preBook {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 50px;
+  background-color:#FFF225; /* Success button color */
+  color: white;
+  border: none;
+  border-radius: 50px; /* Optional: Make the button round */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+#preBook:hover {
+  background-color: #224129; /* Darker shade for hover effect */
+  transform: scale(1.1); /* Zoom in effect */
+  box-shadow: 4px 4px 20px rgba(34, 0, 255); /* Blue shadow glow */
+  z-index: 1; /* Bring the hovered slide to the front */
+}
+.click-here{
+  color: #FFF225;
+  cursor: pointer;
+}
+.click-here:hover{
+  box-shadow: 0 12px 24px rgba(200, 255, 0, 0.986); /* Blue shadow on hover */
+  transform: scale(0.9) translateY(-5px); /* Zoom in and move up */
+  z-index: 2.5; 
+  cursor:pointer;
+
+}
+.rental-app-banner {
+
+  width: 70%;
+  position: relative;
+  margin-top: -70px;
+  margin-bottom: 15px;
+  background-color: #f8f9fa; /* Light background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+
+  z-index: 1000; /* Ensure it appears above other elements */
+  box-shadow: 0 2px 5px rgba(45, 14, 14, 0.1); /* Optional shadow for better visibility */
+}
+.rental-app-banner:hover{
+  box-shadow: 0 12px 24px rgba(200, 255, 0, 0.286); /* Blue shadow on hover */
+  transform: scale(0.9) translateY(-5px); /* Zoom in and move up */
+  z-index: 1.5; 
+  cursor:pointer;
+}
+
+.rental-app-banner span {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 20px; /* Space between text and icons */
+  color: #333; /* Dark text color */
+}
+
+.app-icon {
+  height: 50px; /* Adjust as necessary */
+  margin: 0 10px; /* Space between icons */
+  border-radius: 5px;
+}
+.app-icon:hover{
+  box-shadow: 0 12px 24px rgba(24, 8, 8, 0.286); /* Blue shadow on hover */
+  transform: scale(1.5) translateY(-2px); /* Zoom in and move up */
+  z-index: 1.5; 
+}
+/* Existing styles remain unchanged */
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .fixed-text-container {
+    height: 50px;
+  }
+
+  .dynamic-text::after {
+    content: 'Comfort';
+  }
+}
+
+@media (max-width: 992px) {
+  .fixed-text-container {
+    height: 45px;
+  }
+
+  .dynamic-text::after {
+    content: 'Comfort';
+  }
+}
+
+@media (max-width: 768px) {
+  .fixed-text-container {
+    height: 40px;
+  }
+
+  .dynamic-text::after {
+    content: 'Comfort';
+  }
+  
+  .home-page {
+    margin-top: 50px;
+  }
+
+  .swiper-container {
+    height: auto;
+  }
+
+  .slide-controller {
+    margin-top: 10px;
+  }
+
+  .slider-arrow {
+    font-size: 18px;
+  }
+
+  .swiper-pagination {
+    margin-top: 20px;
+  }
+
+  .container1 {
+    height: auto;
+  }
+
+  .showupimg img {
+    max-width: 100%;
+  }
+
+  .product-container {
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.8em;
+  }
+
+  .click-here {
+    font-size: 0.8em;
+  }
+
+  #preBook {
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .rental-app-banner {
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .rental-app-banner span {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+  .app-icon {
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fixed-text-container {
+    height: 30px;
+  }
+
+  .dynamic-text::after {
+    content: 'Comfort';
+  }
+  
+  .home-page {
+    margin-top: 30px;
+  }
+
+  .swiper-container {
+    height: auto;
+  }
+
+  .slide-controller {
+    margin-top: 5px;
+  }
+
+  .slider-arrow {
+    font-size: 14px;
+  }
+
+  .swiper-pagination {
+    margin-top: 10px;
+  }
+
+  .container1 {
+    height: auto;
+  }
+
+  .showupimg img {
+    max-width: 100%;
+  }
+
+  .product-container {
+    padding: 5px;
+    margin: 5px;
+    font-size: 0.7em;
+  }
+
+  .click-here {
+    font-size: 0.7em;
+  }
+
+  #preBook {
+    width: 70px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .rental-app-banner {
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .rental-app-banner span {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+
+  .app-icon {
+    height: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .fixed-text-container {
+    height: 20px;
+  }
+
+  .dynamic-text::after {
+    content: 'Ease';
+  }
+
+  .home-page {
+    margin-top: 20px;
+  }
+
+  .swiper-container {
+    height: auto;
+  }
+
+  .slide-controller {
+    margin-top: 2px;
+  }
+
+  .slider-arrow {
+    font-size: 12px;
+  }
+
+  .swiper-pagination {
+    margin-top: 5px;
+  }
+
+  .container1 {
+    height: auto;
+  }
+
+  .showupimg img {
+    max-width: 100%;
+  }
+
+  .product-container {
+    padding: 3px;
+    margin: 3px;
+    font-size: 0.6em;
+  }
+
+  .click-here {
+    font-size: 0.6em;
+  }
+
+  #preBook {
+    width: 60px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .rental-app-banner {
+    flex-direction: column;
+    width: 100%;
+    padding: 2px;
+  }
+
+  .rental-app-banner span {
+    font-size: 0.8em;
+    margin-bottom: 2px;
+  }
+
+  .app-icon {
+    height: 25px;
+  }
+}

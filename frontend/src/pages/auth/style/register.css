@@ -1,0 +1,47 @@
+.containerreg {
+  max-width: 900px; /* Increased max-width for wider container */
+  margin: 0 auto;
+  background: #3C3C3C; /* Dark grey background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Darker shadow */
+}
+
+.register {
+  background-color: #424242; /* Dark grey */
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.form-label {
+  font-weight: bold;
+  color: #FFFFFF; /* White text */
+}
+
+.form-control {
+  background-color: #2C2A2A; /* Darker grey input background */
+  color: #FFFFFF; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 5px #373737; /* Lighter grey outline on focus */
+}
+
+.btn-primary {
+  background-color: #F9ED32; /* Yellow */
+  color: #252525; /* Black text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #FFF225; /* Lighter yellow on hover */
+}

@@ -1,0 +1,13 @@
+cd frontend
+    npm i
+cd backend
+    npm i
+
+cd backend
+    nodemon run server.js
+
+cd frontend
+    npm start
+
+
+to set the database and others visit .env file in backend dir

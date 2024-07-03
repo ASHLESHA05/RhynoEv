@@ -1,0 +1,31 @@
+.product-container {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(213, 171, 171, 0.1);
+    background-color: #201b1b;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .product-container:hover {
+    box-shadow: 0 12px 24px rgba(#FFF225, 0.4); /* Blue shadow on hover */
+    transform: scale(1.05) translateY(-5px); /* Zoom in and move up */
+    z-index: 1; /* Ensure hover item is above others */
+  }
+  .App {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .click-here{
+    color: #FFF225;
+    cursor: pointer;
+  }
+  .click-here:hover{
+    box-shadow: 0 12px 24px rgba(200, 255, 0, 0.986); /* Blue shadow on hover */
+    transform: scale(0.9) translateY(-5px); /* Zoom in and move up */
+    z-index: 2.5; 
+    cursor:pointer;
+  
+  }

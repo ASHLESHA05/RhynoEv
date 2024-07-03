@@ -1,0 +1,39 @@
+.extraordinary-container {
+    max-width: 100%;
+    max-height: 150%;
+    border: 1px solid white;
+    background-color:#EDEDED;
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 5px #89caf0;
+    font-family: 'Times New Roman';
+    height: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, font-weight 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .extraordinary-container:hover {
+    transform: scale(1.1); /* Zoom in effect */
+    box-shadow: 0 0 20px rgba(#fff225, 0.5); /* Blue shadow glow */
+    z-index: 1; /* Bring the hovered slide to the front */
+  }
+  
+  .extraordinary-container:hover h1,
+  .extraordinary-container:hover p {
+    font-weight: bold;
+    text-shadow: 2px 2px 10px #000; /* Clearer text */
+  }
+
+  #loc:hover{
+    transform: scale(1.1); /* Zoom in effect */
+    text-shadow: 4px 4px 20px #fff225; /* Blue shadow glow */
+    z-index: 1; /* Bring the hovered slide to the front */
+  
+  }
+  #book-test-ride:hover{
+    transform: scale(1.1); /* Zoom in effect */
+    text-shadow: 4px 4px 20px rgb(7, 180, 102); /* Blue shadow glow */
+    z-index: 1; /* Bring the hovered slide to the front */
+  
+  }
